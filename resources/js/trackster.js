@@ -9,6 +9,7 @@ $(document).ready(function() {
   $('#search-button').click(function(){
     Trackster.searchTracks($('#search-input').val());
     $('#search-input').val('');
+    $('#track-list').empty();
   });
 
 });
@@ -29,9 +30,11 @@ Trackster.renderTracks = function(track) {
         <i class='fa fa-play-circle-o fa-2x'></i>
       </a>
       <div class='col-xs-3'>${track.name}</div>
-      <div class='col-xs-2'>${track.artist}</div>
+      <div class='col-xs-3'>${track.artist}</div>
       <div class='col-xs-2'>${track.listeners}</div>
-      <img class='col-xs-2' src=${track.image[1]["#text"]}/>
+      <div class='image-container col-xs-2 album-art'>
+        <img class='album-art' src=${track.image[1]["#text"]}'/>
+      </div>
     </div>
   `);
 };
