@@ -32,26 +32,53 @@ body {
 #search-input {
   border-radius: 20px;
   margin-right: .5rem;
+  border: none;
 }
 
 #search-button {
-  background-color: rgb(255,102,204);
+  background-color: rgb(255,0,171);
   text-align: center;
   border-radius: 20px;
 }
 
 #search-button:hover {
-  background-color: rgb(255,0,171);
+  background-color: rgb(255,102,204);
   cursor: pointer;
 }
 
 .fa-search {
   padding: .39rem;
-  color: black;
+  color: rgb(35,2,63);
 }
 
 .attributes {
   background-color: rgb(104,0,255);
   color: rgb(255,255,255);
   font-weight: 500;
+}
+
+#play-button {
+  display: flex;
+  align-items: center;
+  color: rgb(255,0,171);
+  vertical-align: middle;
+
+}
+
+#play-button i:hover {
+  color: rgb(255,102,204);
+  cursor: pointer;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  background-color: rgb(204,204,204);
+  color: rgb(74,74,74);
+  font-size: 1rem;
+  min-height: 4rem;
+}
+
+.track:hover {
+  background-color: rgb(239,237,242);
 }
